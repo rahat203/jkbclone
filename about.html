@@ -21,7 +21,7 @@
         }
 
         .wrapper {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -35,7 +35,7 @@
             justify-content: space-between;
             align-items: center;
             /* position: fixed; */
-            width: 1400px;
+            width: 1200px;
             top: 27px;
             z-index: 100;
         }
@@ -63,14 +63,46 @@
             text-decoration: none;
         }
 
-        /* #img1{
-            position: absolute;
-            z-index: 1;
+        .up-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 750px;
+            margin-left: 250px;
+            color: #FFF;
+
         }
-        #img2{
-            position: relative;
-            top: 1039px;
-        } */
+
+        .up {
+            color: #E67F22;
+            font-family: "Poppins";
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .up2 {
+            color: #FFF;
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .aftertext {
+            color: #FFF;
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 750px;
+            margin-left: 250px;
+        }
+
         .about-us-grid {
             display: flex;
             flex-wrap: wrap;
@@ -78,15 +110,16 @@
             justify-content: center;
         }
 
+
         .card {
             flex-basis: calc(33.33% - 40px);
             /* background-color: #f0f0f0; */
             padding: 20px;
             border-radius: 2px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 0px solid #e40c0c;
-            border-left-width: 2px;
-            border-bottom-width: 2px;
+            border: 0px solid white;
+            border-left-width: 1px;
+            border-bottom-width: 1px;
 
         }
 
@@ -105,6 +138,22 @@
             /* margin: 0; */
             font-family: "Poppins", sans-serif;
             font-size: 10px;
+        }
+
+        .orange {
+            color: #E67F22;
+            font: "Poppins";
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .grey {
+            color: #84898C;
+            font-family: Poppins;
+            font-size: 14px;
+
+            font-weight: 400;
+
         }
     </style>
 </head>
@@ -127,16 +176,20 @@
 
     </header>
     <div class="wrapper">
-        <h3>About Us</h3>
-        <p>Welcome to JKB Educational Institute, the epitome of excellence and empowerment in the field of engineering
-            education in India.
-            Led by the visionary director and esteemed tutor, Mr. Vinayak Shete, we are driven by a singular mission to
-            uplift and empower the
-            country's youth. Since our establishment in 2011, we have continuously evolved, creating a nurturing
-            environment and providing
-            outstanding facilities for our students' holistic development.
-        </p>
-
+        <div class="up-center">
+            <h3 class="up">About Us</h3>
+            <p class="up2">Welcome to JKB Educational Institute, the epitome of excellence and empowerment in the field
+                of
+                engineering
+                education in India.
+                Led by the visionary director and esteemed tutor, Mr. Vinayak Shete, we are driven by a singular mission
+                to
+                uplift and empower the
+                country's youth. Since our establishment in 2011, we have continuously evolved, creating a nurturing
+                environment and providing
+                outstanding facilities for our students' holistic development.
+            </p>
+        </div>
         <!-- <div class="images">
             <img id="img1" src="./images/AU1.png" alt="">
             <img id="img2" src="./images/AU2.png" alt="">
@@ -146,10 +199,11 @@
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
+                    <div class="orange">
                         Prof Vinayak Shete <br>
                         Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
+                        <p class="grey">Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB
+                            Educational & IT
                             Services , has positively influenced the lives of thousands of aspiring engineers with his
                             vast teaching experience and deep-rooted passion for yoga and meditation.</p>
                     </div>
@@ -158,66 +212,61 @@
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
-                        Prof Vinayak Shete <br>
-                        Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
-                            Services , has positively influenced the lives of thousands of aspiring engineers with his
-                            vast teaching experience and deep-rooted passion for yoga and meditation.</p>
+                    <div class="orange">
+                        Prof N H DUbey<br>
+                        Author
+                        <p class="grey">Prof. N H Dubey is a renowned Author who has written many textbooks like Engg. Mechanics, and Engg. Drawing/Graphics. With his vast teaching experience and expertise, he has left a lasting 
+                        impact on the engineering journey of numerous students. </p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
-                        Prof Vinayak Shete <br>
+                    <div class="orange">
+                        Ms Poonam <br>
                         Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
-                            Services , has positively influenced the lives of thousands of aspiring engineers with his
-                            vast teaching experience and deep-rooted passion for yoga and meditation.</p>
+                        <p class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat perspiciatis repellat, incidunt facere ullam error quo quae ipsam omnis quis, iste, officia deleniti optio tenetur. 
+                            Debitis non natus nesciunt odit.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
-                        Prof Vinayak Shete <br>
-                        Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
-                            Services , has positively influenced the lives of thousands of aspiring engineers with his
-                            vast teaching experience and deep-rooted passion for yoga and meditation.</p>
+                    <div class="orange">
+                        Anmol More <br>
+                        Professor
+                        <p class="grey">Amol Mane, an Engineering Graduate from VJTI, Mumbai is an expert faculty who provides coaching for 1st year Engg. subjects and competitive exams like GATE. Moreover, he is a
+                             working professional in the construction industry.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
-                        Prof Vinayak Shete <br>
-                        Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
-                            Services , has positively influenced the lives of thousands of aspiring engineers with his
-                            vast teaching experience and deep-rooted passion for yoga and meditation.</p>
+                    <div class="orange">
+                        Abhishek Satre <br>
+                        Sr Manager (Full Stack Dev)
+                        <p class="grey">Abhishek Satre is a Sr. Manager having 6+ years of working experience in the IT industry as a Full-Stack Web Developer. 
+                            He is a master trainer for the Industrial Courses at JKB.</p>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
                     <div> <img src="./images/AU.png" alt="Image 1"></div>
-                    <div>
-                        Prof Vinayak Shete <br>
-                        Director
-                        <p>Mr. Vinayak Shete, the visionary director and esteemed lecturer at JKB Educational & IT
-                            Services , has positively influenced the lives of thousands of aspiring engineers with his
-                            vast teaching experience and deep-rooted passion for yoga and meditation.</p>
+                    <div class="orange">
+                        Anand Dubey <br>
+                        Sr Manager (Mobile App Dev)
+                        <p class="grey">Anand Dubey is a working IT professional and 
+                            an expert Mobile Application Developer. Moreover, he is a master trainer for the Industrial Courses at JKB. </p>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="afftertext">
+        <div class="aftertext">
             <p>At JKB, we believe in delivering the best learning experiences with renowned authors like Prof. N H
                 Dubey, ensuring comprehensive study materials and ample growth opportunities for our students. With Mr.
                 Vinayak Shete's vast teaching experience, we have positively influenced the lives of thousands of
