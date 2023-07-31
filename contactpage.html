@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+        h1 {
+            color: rgb(230, 127, 34);
+            font-family: 'poppins', sans-serif;
+        }
+
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            background-color: rgb(16, 24, 28);
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+
+        }
+
+        input[type=number],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            background-color: rgb(16, 24, 28);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        textarea {
+            background-color: rgb(16, 24, 28);
+            color: white;
+        }
+
+        input[type=submit] {
+            background-color: rgb(230, 127, 34);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color: rgba(16,24,28);">
+
+    <h1><b>Contact Us</b></h1>
+
+    <form>
+        <label for="fname" style="color: white; font-family:'poppins', sans-serif;">Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Click here to enter Name">
+        <br>
+        <label for="lname" style="color: white; font-family:'poppins', sans-serif;>Phone Number</label><br>
+        <input type=" number" id="lname" name="lname" placeholder="Click here to enter Phone Number"><br>
+            <br>
+            <label for="ename">Email ID</label><br>
+            <input type="text" id="ename" name="ename" placeholder="Click here to enter Email ID">
+            <br>
+            <br>
+            <label for="sname">Adress(Area & Location)</label><br>
+            <input type="text" id="sname" name="sname" placeholder="Click here to enter Address">
+            <br>
+            <br>
+            <label for="pname">Enquiry Purpose</label><br>
+            <textarea>write your purpose of contacting Team JKB</textarea>
+            <br>
+            <br>
+            <br>
+            <div class="center">
+                <input type="submit" value="Submit Details" onclick="Sumbit">
+            </div>
+    </form>
+</body>
+
+</html>
