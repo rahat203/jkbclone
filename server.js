@@ -10,7 +10,8 @@ app.get('/about', function (req, res) {
 })
 
 
-app.get('/', function (req, res) {
+app.get('/', 
+unction (req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 
@@ -22,3 +23,4 @@ app.get('/contactpage', function (req, res) {
 app.listen(port, () => {
     console.log("connected")
 })
+
