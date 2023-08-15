@@ -14,6 +14,9 @@
             box-sizing: border-box;
             background-color: #020F16;
         }
+        html{
+            scroll-behavior: smooth;
+        }
 
         body {
             margin: 0;
@@ -67,9 +70,9 @@
             background-color: transparent;
             color: white;
             padding: 16px;
+            font-size: 22px;
             border: none;
             cursor: pointer;
-            font-size: 22.122px;
         }
 
         .dropdown {
@@ -112,7 +115,7 @@
         }
 
         .container {
-            margin-top: 70px;
+            margin-top: 40px;
             display: flex;
             margin-bottom: 20px;
         }
@@ -148,15 +151,21 @@
             height: 75%;
             background-size: cover;
             background-position: center;
-            cursor: progress;
+            cursor: pointer;
 
 
         }
 
-        .right-text{
+        /* 
+        .right-text {
+        } */
+
+        .right-text {
+            text-decoration: none;
+            color: #E67F22;
+            font-size: 15px;
             padding-top: 2px;
             text-align: center;
-            color: #E67F22;
         }
 
 
@@ -165,6 +174,7 @@
             max-width: 100%;
             height: auto;
         }
+
 
         .textcards {
             display: flex;
@@ -239,9 +249,10 @@
         .HM_boxs {
             display: flex;
             height: 250px;
+            margin: 50px 25px;
         }
 
-        .HM-left{
+        .HM-left {
             color: white;
             width: 55%;
             margin: 0 10px;
@@ -250,7 +261,7 @@
         }
 
 
-        .HM-flex{
+        .HM-flex {
             display: flex;
             flex-direction: column;
             background-color: #17242B;
@@ -267,6 +278,8 @@
             font-size: 23px;
             color: #E67F22;
             background-color: #17242B;
+            font-family: 'Poppins';
+            font-weight: 700;
         }
 
         .HM-right {
@@ -296,13 +309,41 @@
             height: 70%;
         }
 
+        .Testimonials {
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            margin-top: 50px;
+            /* margin-bottom: 20px; */
+            color: #E67F22;
+        }
 
-        .HM4 img {
-            max-width: 100%;
+        .HM4-cards {
+            display: flex;
+            margin: 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .cards {
+            /* flex: 1; */
+            flex: 0 0 calc(20% - 10px);
+        }
+
+        .imgCds img {
+            width: 100%;
             height: auto;
-            margin-top: 60px;
+        }
 
-
+        .textCds {
+            color: #FFF;
+            font-family: 'Poppins';
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            background-color: #000;
+            border-radius: 0 0 10px 10px;
         }
     </style>
 </head>
@@ -319,21 +360,21 @@
                         <div class="dropdown">
                             <button class="dropbtn">Courses</button>
                             <div class="dropdown-content">
-                                <a href="#">Engg. Admission Counselling</a>
-                                <a href="#">Ist Year Programming</a>
-                                <a href="#">Ist Year Engg. Coaching</a>
-                                <a href="#">IT Services for Start-Up</a>
-                                <a href="#">2nd Year Programming</a>
-                                <a href="#">MS in US & Europe</a>
-                                <a href="#">3rd Year Programming</a>
-                                <a href="#">Project & Placement</a>
-                                <a href="#">Financial Literacy</a>
-                                <a href="#">Youth Empowerment Hub</a>
+                                <a href="./couselling.html">Engg. Admission Counselling</a>
+                                <a href="./program.html">Ist Year Programming</a>
+                                <a href="./coaching.html">Ist Year Engg. Coaching</a>
+                                <a href="./ITservices.html">IT Services for Start-Up</a>
+                                <a href="./sec-program.html">2nd Year Programming</a>
+                                <a href="./Ms.html">MS in US & Europe</a>
+                                <a href="./thirdyear.html">3rd Year Programming</a>
+                                <a href="./project.html">Project & Placement</a>
+                                <a href="./financial.html">Financial Literacy</a>
+                                <a href="./youth.html">Youth Empowerment Hub</a>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">Counselling</a></li>
-                    <li><a href="./ITservices.html">IT Service</a></li>
+                    <li><a href="./couselling.html">Counselling</a></li>
+                    <li><a href="./Itservices.html">IT Service</a></li>
                     <li><a href="./about.html">About us</a></li>
                 </ul>
             </nav>
@@ -351,8 +392,9 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <a href="#" class="btn">College Predict for Engg</a>
-                    <a href="./contactpage.html" class="btn">Contact</a>
+                    <a href="https://beeg.com/" class="btn" target="_blank">College Predict
+                        for Engg</a>
+                    <a href="./contact.html" class="btn">Contact</a>
                 </div>
                 <div class="info">
                     <div class="info-card">
@@ -390,61 +432,99 @@
             <div class="right">
                 <!-- <img src="./images/HM2.png" alt=""> -->
                 <div class="box">
-                    <div class="imgBg"
-                        style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Engg-Counselling.jpg');">
-                    </div>
-                    <div class="right-text">Engg. Admission Counselling</div>
+                    <a href="./couselling .html">
+                        <div class="imgBg"
+                            style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Engg-Counselling.jpg');">
+                        </div>
+                        <div class="right-text"> Engg. Admission Counselling </div>
+                    </a>
                 </div>
                 <div class="box">
-                    <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Programming.jpg');"></div>
-                    <div class="right-text">1st Year Programming</div>
-                </div>
-                <div class="box">
-                    <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Engg.jpg');"></div>
-                        <div class="right-text">1st Year Engg. Couching</div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/IT-Services-for-Start-Up.jpg');"></div>
-                        <div class="right-text">IT Service of Startup</div>
-                    </div>
+                    <a href="">
+                        <div class="imgBg"
+                            style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Programming.jpg');">
+                        </div>
+                        <div class="right-text"> 1st Year Programming</div>
+                    </a>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/2nd-Year-Programming.jpg');"></div>
-                        <div class="right-text">2nd Year Programming</div>
+                        <a href="./coaching.html">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/1st-Year-Engg.jpg');">
+                            </div>
+                            <div class="right-text"> 1st Year Engg. Coaching</div>
+                        </a>
                     </div>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/MS-in-US-%26-Europe.jpg');"></div>
-                        <div class="right-text">MS in US & Europe</div>
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/IT-Services-for-Start-Up.jpg');">
+                            </div>
+                            <div class="right-text">IT Service of Startup </div>
+                        </a>
                     </div>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/3rd-Year-Programming.jpg');"></div>
-                        <div class="right-text">3rd Year Programming</div>
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/2nd-Year-Programming.jpg');">
+                            </div>
+                            <div class="right-text">2nd Year Programming</div>
+                        </a>
                     </div>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Project-and-Placement.jpg');"></div>
-                        <div class="right-text">Project & Placement</div>
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/MS-in-US-%26-Europe.jpg');">
+                            </div>
+                            <div class="right-text"> MS in US & Europe</div>
+                        </a>
                     </div>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Financial-Literacy.jpg');"></div>
-                        <div class="right-text">Financial Literacy</div>
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/3rd-Year-Programming.jpg');">
+                            </div>
+                            <div class="right-text"> 3rd Year Programming</div>
+                        </a>
                     </div>
                 </div>
                 <div class="box">
                     <div class="box">
-                        <div class="imgBg" style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Youth-Empowerment-Skills.jpg');"></div>
-                        <div class="right-text">Youth Empowerment Hub</div>
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Project-and-Placement.jpg');">
+                            </div>
+                            <div class="right-text">Project & Placement</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box">
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Financial-Literacy.jpg');">
+                            </div>
+                            <div class="right-text">Financial Literacy</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box">
+                        <a href="">
+                            <div class="imgBg"
+                                style="background-image: url('https://jkbstaticservices.s3.ap-south-1.amazonaws.com/Youth-Empowerment-Skills.jpg');">
+                            </div>
+                            <div class="right-text">Youth Empowerment Hub</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -498,8 +578,29 @@
             </div>
         </div>
     </div>
+
     <div class="HM4">
-        <img src="./images/HM4.png" alt="">
+        <div class="Testimonials">Testimonials</div>
+        <!-- <img src="./images/HM4.png" alt=""> -->
+        <div class="HM4-cards">
+            <div class="cards">
+                <div class="imgCds"><iframe src="https://www.youtube.com/embed/G5g8Gfo8Qc8"></iframe></div>
+                <div class="textCds">Chiranjiv Nagrajan</div>
+            </div>
+            <div class="cards">
+                <div class="imgCds"><iframe src="https://www.youtube.com/embed/MbP4Nq-ngQU"></iframe></div>
+                <div class="textCds">Pranil Bhalshankar </div>
+            </div>
+          
+            <div class="cards">
+                <div class="imgCds"><iframe src="https://www.youtube.com/embed/4Gg0j29m1CY"></iframe></div>
+                <div class="textCds">Darshana Nikam</div>
+            </div>
+            <div class="cards">
+                <div class="imgCds"><iframe src="https://www.youtube.com/embed/_ee8q5YHW1c"></iframe></div>
+                <div class="textCds">Harshal Bhoir </div>
+            </div>
+        </div>
     </div>
     </div>
 
