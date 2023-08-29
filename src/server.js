@@ -60,24 +60,21 @@
 // });
 
 
-
-
-
-
-
-
 const express = require('express');
 
 const path = require('path');
 const serveStatic = require('serve-static');
 const hbs = require("hbs");
-const { log } = require('console');
-
+const { log, error } = require('console');
+require("./db/conn");
+const student=require("./models/schema");
 const app = express();
 const port = process.env.PORT || 8000;
 
 const static_path = path.join(__dirname, "../public");
 app.use(express.static(static_path));
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 app.use("/node_modules", express.static('node_modules'));
 // const views_path = path.join(__dirname, "../views")
 const template_path = path.join(__dirname, "../templates/views");
@@ -100,6 +97,22 @@ app.get("/coaching", function (req, res) {
 });
 app.get("/contactpage", function (req, res) {
     res.render("contactpage")
+});
+app.post('/contact',async(req,res)=>{
+try {
+    const StudentPurpose = new student ({
+        fname: req.body.fname,
+        numb: req.body.numb,
+        email: req.body.email,
+        address: req.body.address,
+        purpose: req.body.purpose,
+    })
+    const Purposed = StudentPurpose.save();
+    res.status(201).send("hi kaise ho tum");
+}
+catch (error){
+    res.status (400).send (error);
+}
 });
 app.get("/counselling", function (req, res) {
     res.render("counselling")

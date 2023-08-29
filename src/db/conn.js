@@ -1,4 +1,11 @@
-// yeah pe connect k code likhna
 
 
-// and server.js me import karna yyeh file
+const mongoose = require ("mongoose");
+mongoose.connect ("mongodb://localhost:27017/jkb_website",{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("connected successfully");
+}).catch((e)=>{
+    console.log(e);
+})
